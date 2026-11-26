@@ -67,7 +67,10 @@ table{width:100%;border-collapse:collapse}
 td{padding:.4rem 0;border-bottom:1px dashed var(--line)}
 td:last-child{text-align:right;color:var(--muted)}
 tr.today td{color:var(--teal);font-weight:700}
-
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.gallery figure{margin:0;border-radius:14px;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
+.gallery img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.gallery figcaption{padding:.6rem .9rem;color:var(--muted);font-size:.95rem}
 /* --- Footer --- */
 footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
 
@@ -84,7 +87,3 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;display:flex;just
   html{scroll-behavior:auto}
   .btn:hover{transform:none}
 }
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
-.gallery figure{margin:0;border-radius:14px;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
-.gallery img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
-.gallery figcaption{padding:.6rem .9rem;color:var(--muted);font-size:.95rem}
